@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily:{
         MATTERS : ["Matter SQ Regular", "sans-serif"],
+        CREATO : ["Creato Display", "sans-serif"],
       }
     },
   },
