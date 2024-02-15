@@ -1,20 +1,17 @@
-import Audience from "../components/Audience";
 import Clients from "../components/Clients";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import HeroAbout from "../components/HeroAbout";
+import OurValues from "../components/OurValues";
 import Services from "../components/Services";
-import Transforming from "../components/Transforming";
-import Work from "../components/Work";
-export default function Home() {
+
+export default function About() {
     return (
         <>
             <Header />
-            <Hero />
-            <Work />
-            <Audience />
+            <HeroAbout />
             <Services />
-            <Transforming />
+            <OurValues />
             <Clients />
             <Footer />
         </>

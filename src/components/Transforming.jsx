@@ -1,7 +1,20 @@
+import gsap from "gsap";
+import { useRef, useLayoutEffect } from "react";
 export default function Transforming() {
+    const animaton = useRef(null);
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from(animaton.current, {
+                opacity: 0,
+                duration: 0.5,
+            })
+        })
+
+        return () => ctx.revert();
+    }, [])
     return (
-        <div className="bg-[#121211] h-auto py-4 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-10 rounded-lg bg-[#202020] py-[20px] md:py-[100px] ">
+        <div className="bg-[#121211] h-auto py-4 z-30 relative" >
+            <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-10 rounded-lg bg-[#202020] py-[80px] md:py-[100px] px-[20px] md:px-[0px] ">
                 <p className=" text-[#e3f551] font-MATTERS px-[10px] md:px-[80px] text-4xl md:text-5xl ">Transforming Brands through Design</p>
                 <div className="  text-white font-MATTERS px-[10px] md:px-[180px] text-xl mt-8 md:mt-8">
                     <p>Based in Aarhus, Denmark, we are a tiny design studio dedicated to transforming

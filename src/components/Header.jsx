@@ -1,9 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // If you're using React Router for navigation
+import { Link, useLocation } from 'react-router-dom';
+import gsap from "gsap";
+import { useRef, useLayoutEffect } from "react";
 
 function Header() {
+    const location = useLocation();
+    const isAboutOrContactPage = location.pathname === '/about' || location.pathname === '/contact';
+    const animaton = useRef(null);
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.from(animaton.current, {
+                opacity: 0,
+                duration: 0.5,
+            })
+        })
+
+        return () => ctx.revert();
+    }, [])
     return (
-        <header className="fixed top-0 left-0 right-0 bg-transparent z-50">
+        <header className="fixed top-0 left-0 right-0 bg-transparent z-50" >
             <nav className="flex justify-center md:justify-between md:items-center py-4 px-8 md:px-16">
                 <div className='hidden md:block'>
                     <div className="grid grid-cols-2 gap-1">
@@ -14,9 +29,24 @@ function Header() {
                     </div>
                 </div>
 
-                <ul className="flex   gap-1 ">
-                    <li><Link to="/about" className="text-white bg-[#252525] px-4 py-1 bg-opacity-50 hover:text-[#121211] hover:bg-[#e3f551] rounded-2xl">About</Link></li>
-                    <li><Link to="/contact" className="text-white bg-[#252525] px-4 py-1 bg-opacity-50 hover:text-[#121211] hover:bg-[#e3f551] rounded-2xl">Contact</Link></li>
+                <ul className="flex gap-1">
+                    {isAboutOrContactPage && (
+                        <li>
+                            <Link to="/" className="text-white bg-[#252525] px-4 py-1 bg-opacity-50 hover:text-[#121211] hover:bg-[#e3f551] rounded-2xl">
+                                Home
+                            </Link>
+                        </li>
+                    )}
+                    <li>
+                        <Link to="/about" className="text-white bg-[#252525] px-4 py-1 bg-opacity-50 hover:text-[#121211] hover:bg-[#e3f551] rounded-2xl">
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" className="text-white bg-[#252525] px-4 py-1 bg-opacity-50 hover:text-[#121211] hover:bg-[#e3f551] rounded-2xl">
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>
