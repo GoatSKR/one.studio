@@ -13,7 +13,7 @@ export default function Footer() {
         return () => ctx.revert();
     }, [])
     return (
-        <div className="h-[600px] md:h-[500px] bg-transparent" > 
+        <div className="h-[600px] md:h-[500px] bg-transparent !scroll-smooth" > 
             <div className="fixed bottom-0 w-full bg-[#f3efe6] py-[80px] z-10 overflow-y-auto ">
                 <div className="flex flex-col md:flex-row md:items-center ">
                     <div className="basis-1/2 pl-[20px] md:pl-[70px]">

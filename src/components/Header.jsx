@@ -18,7 +18,7 @@ function Header() {
         return () => ctx.revert();
     }, [])
     return (
-        <header className="fixed top-0 left-0 right-0 bg-transparent z-50" >
+        <header className="fixed top-0 left-0 right-0 bg-transparent z-50 !scroll-smooth" >
             <nav className="flex justify-center md:justify-between md:items-center py-4 px-8 md:px-16">
                 <div className='hidden md:block'>
                     <div className="grid grid-cols-2 ">

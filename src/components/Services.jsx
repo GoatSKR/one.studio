@@ -13,7 +13,7 @@ export default function Services() {
         return () => ctx.revert();
     }, [])
     return (
-        <div className="bg-[#121211] h-auto py-[10px] md:py-[50px] z-30 relative " >
+        <div className="bg-[#121211] h-auto py-[10px] md:py-[50px] z-30 relative !scroll-smooth" >
             <div className="flex flex-col md:flex-row mx-2 md:mx-10 rounded-xl bg-[#e3f551] py-[80px] md:py-[100px] px-[20px] md:px-[0px]">
                 <p className=" basis-1/2 text-[#202020] font-MATTERS px-[10px] md:px-[80px] text-4xl md:text-5xl ">Services</p>
                 <div className="basis-1/2 flex flex-col md:flex-row  justify-end">

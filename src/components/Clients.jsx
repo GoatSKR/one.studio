@@ -28,7 +28,7 @@ export default function Clients() {
         };
     }, []);
     return (
-        <div className="bg-[#121211] py-[70px] rounded-b-3xl z-30 relative">
+        <div className="bg-[#121211] py-[70px] rounded-b-3xl z-30 relative !scroll-smooth">
             <h1 className="font-MATTERS text-center text-4xl text-white">Selected clients</h1>
             <div className="flex flex-col md:flex-row gap-[30px] items-center justify-center mt-[40px] mx-10">
                 <img className="h-[60px] md:h-[100px]" src="https://assets-global.website-files.com/62f9f54a992a3bf5aece378a/637cbcd70b9eca1e737a9986_4.png" alt="client1" />

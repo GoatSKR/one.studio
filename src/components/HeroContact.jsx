@@ -13,7 +13,7 @@ export default function HeroContact() {
         return () => ctx.revert();
     }, [])
     return (
-        <div className="bg-[#121211] h-auto pt-[120px] md:pt-[180px] pb-[80px] md:pb-[200px] z-30 relative rounded-b-3xl" >
+        <div className="bg-[#121211] h-auto pt-[120px] md:pt-[180px] pb-[80px] md:pb-[200px] z-30 relative rounded-b-3xl !scroll-smooth" >
             <div className=" font-MATTERS  text-center px-[2%] py-[14%] md:py-[0%] md:px-[20%]">
                 <p className="text-sm pt-[40px] text-center md:text-lg px-[15%] text-[#636363]">
                     Want a new brand, a website, or a coffee?<br />

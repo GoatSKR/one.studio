@@ -13,14 +13,12 @@ export default function Transforming() {
         return () => ctx.revert();
     }, [])
     return (
-        <div className="bg-[#121211] h-auto py-4 z-30 relative" >
+        <div className="bg-[#121211] h-auto py-4 z-30 relative !scroll-smooth" >
             <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-10 rounded-lg bg-[#202020] py-[80px] md:py-[100px] px-[20px] md:px-[0px] ">
                 <p className=" text-[#e3f551] font-MATTERS px-[10px] md:px-[80px] text-4xl md:text-5xl ">Transforming Brands through Design</p>
                 <div className="  text-white font-MATTERS px-[10px] md:px-[180px] text-xl mt-8 md:mt-8">
-                    <p>Based in Aarhus, Denmark, we are a tiny design studio dedicated to transforming
-                        brands. Collaborating closely with companies around the globe, we create
-                        captivating designs that bring visions to life and elevate brands.
-
+                    <p>
+                        Hailing from the US, we're a small design studio focused on transforming brand identities for the modern digital era. Partnering closely with companies worldwide, we craft digital designs that breathe life into visions.
                     </p>
                     <p className="mt-8">We build brands, apps and websites.
                         What do you have in mind?</p>
@@ -29,7 +27,7 @@ export default function Transforming() {
                                  bg-[#202020] rounded-full border-2  
                                  hover:border-[#5e5d5d] hover:text-[#5e5d5d] 
                                 focus:ring-offset-2"
-                        >
+                    >
                         Say hello
                     </button>
                 </div>

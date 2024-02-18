@@ -13,7 +13,7 @@ export default function Work(){
         return () => ctx.revert();
     }, [])
     return(
-        <div  className="bg-[#121211] h-auto py-4 z-30 relative" >
+        <div  className="bg-[#121211] h-auto py-4 z-30 relative !scroll-smooth" >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 md:mx-10">
                 <div className="">
                     <img className="rounded-xl " src="https://assets-global.website-files.com/62f9f54a992a3bf5aece378a/65b02ce24cb2bd4bf7a52421_Falko.gif"  />
