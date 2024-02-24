@@ -6,7 +6,6 @@ export default function HeroAbout() {
                 <div className="  text-white font-MATTERS px-[10px] md:px-[80px] text-lg mt-8 md:mt-0">
                     <p>
                         Hailing from the US, we're a small design studio focused on transforming brand identities for the modern digital era. Partnering closely with companies worldwide, we craft digital designs that breathe life into visions.
-
                     </p>
                     <p className="mt-8">We specialize in building brands, apps, and websites. For humans, by humans.
                     </p>
@@ -14,7 +13,7 @@ export default function HeroAbout() {
 
             </div>
             <div className=" mx-2 md:mx-10 flex justify-center ">
-                <img className="mt-[80px]  " src="https://assets-global.website-files.com/62f9f54a992a3bf5aece378a/650fff1b8268c1353cc80338_doozy%20studio-p-1600.png" alt="" />
+                {/* <img className="mt-[80px]  " src="https://assets-global.website-files.com/62f9f54a992a3bf5aece378a/650fff1b8268c1353cc80338_doozy%20studio-p-1600.png" alt="" /> */}
 
             </div>
         </div>
